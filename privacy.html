@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy | BRANDY Marketing Agency</title>
+    <meta name="description"
+        content="Learn how BRANDY Marketing Agency collects, uses and protects your personal information when you visit our website or contact us.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <style>
+        /* =========================================
+           BRANDY PRIVACY POLICY
+           Premium Black & Orange Theme
+        ========================================= */
+
+        :root {
+            --bg: #090909;
+            --surface: #111111;
+            --surface-light: #171717;
+            --orange: #ff6b1a;
+            --orange-light: #ff8745;
+            --white: #ffffff;
+            --text: #d0d0d0;
+            --muted: #888888;
+            --border: rgba(255, 255, 255, 0.09);
+            --container: 1180px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 35px;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--white);
+            font-family: Inter, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /* HEADER */
+
+        .header {
+            position: relative;
+            z-index: 10;
+            background: rgba(9, 9, 9, 0.96);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: var(--container);
+            width: calc(100% - 48px);
+            min-height: 82px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            display: block;
+            width: 145px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: var(--text);
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color .25s ease;
+        }
+
+        .back-home:hover {
+            color: var(--orange);
+        }
+
+        .back-home span {
+            font-size: 18px;
+            transition: transform .25s ease;
+        }
+
+        .back-home:hover span {
+            transform: translateX(-4px);
+        }
+
+        /* HERO */
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 100px 24px 85px;
+            border-bottom: 1px solid var(--border);
+            background:
+                radial-gradient(ellipse at 80% 35%,
+                    rgba(255, 107, 26, 0.12),
+                    transparent 42%),
+                var(--bg);
+        }
+
+        .hero-inner {
+            max-width: var(--container);
+            margin: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--orange);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 27px;
+            height: 2px;
+            background: var(--orange);
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 7vw, 82px);
+            font-weight: 750;
+            letter-spacing: -4px;
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--orange);
+        }
+
+        .hero-description {
+            max-width: 660px;
+            color: #a3a3a3;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .hero-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 30px;
+            color: #777;
+            font-size: 12px;
+        }
+
+        .meta-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--orange);
+        }
+
+        /* MAIN LAYOUT */
+
+        .main-layout {
+            max-width: var(--container);
+            width: calc(100% - 48px);
+            margin: 75px auto 110px;
+            display: grid;
+            grid-template-columns: 245px minmax(0, 1fr);
+            gap: 55px;
+            align-items: start;
+        }
+
+        /* SIDEBAR */
+
+        .sidebar {
+            position: sticky;
+            top: 30px;
+            padding: 25px 22px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .sidebar-heading {
+            color: #777;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .sidebar nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar a {
+            position: relative;
+            padding: 10px 0;
+            color: #a1a1a1;
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+            transition: color .2s ease, padding .2s ease;
+        }
+
+        .sidebar a:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+            color: var(--orange);
+            padding-left: 7px;
+        }
+
+        /* CONTENT */
+
+        .content {
+            min-width: 0;
+        }
+
+        .intro-card {
+            padding: 30px;
+            margin-bottom: 22px;
+            background: linear-gradient(120deg,
+                    rgba(255, 107, 26, 0.10),
+                    rgba(255, 107, 26, 0.015));
+            border: 1px solid rgba(255, 107, 26, 0.2);
+            border-radius: 12px;
+        }
+
+        .intro-card h2 {
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .intro-card p {
+            color: #aaa;
+            font-size: 13px;
+            line-height: 1.9;
+        }
+
+        .policy-section {
+            padding: 32px;
+            margin-bottom: 17px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            transition: border-color .25s ease,
+                transform .25s ease;
+            scroll-margin-top: 30px;
+        }
+
+        .policy-section:hover {
+            border-color: rgba(255, 107, 26, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .section-number {
+            display: inline-block;
+            color: var(--orange);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 11px;
+        }
+
+        .policy-section h2 {
+            color: var(--white);
+            font-size: 20px;
+            font-weight: 650;
+            letter-spacing: -.4px;
+            margin-bottom: 17px;
+        }
+
+        .policy-section p {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 2;
+            margin-bottom: 13px;
+        }
+
+        .policy-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .policy-section ul {
+            padding-left: 20px;
+            margin: 10px 0 17px;
+        }
+
+        .policy-section li {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.9;
+            padding: 3px 0;
+        }
+
+        .policy-section li::marker {
+            color: var(--orange);
+        }
+
+        .policy-section a {
+            color: var(--orange);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .policy-section a:hover {
+            color: var(--orange-light);
+            text-decoration: underline;
+        }
+
+        /* NOTICE */
+
+        .notice {
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            background: rgba(255, 107, 26, 0.07);
+            border: 1px solid rgba(255, 107, 26, 0.17);
+            border-radius: 8px;
+        }
+
+        .notice-icon {
+            flex-shrink: 0;
+            color: var(--orange);
+            font-size: 19px;
+        }
+
+        .notice p {
+            margin: 0;
+            color: #b2b2b2;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        /* CONTACT CTA */
+
+        .contact-card {
+            position: relative;
+            overflow: hidden;
+            padding: 35px;
+            margin-top: 25px;
+            background: var(--surface-light);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .contact-card::after {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            right: -70px;
+            bottom: -100px;
+            background: var(--orange);
+            filter: blur(100px);
+            opacity: .15;
+            pointer-events: none;
+        }
+
+        .contact-card h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            max-width: 500px;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.8;
+            margin-bottom: 22px;
+        }
+
+        .contact-button {
+            position: relative;
+            z-index: 1;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 19px;
+            background: var(--orange);
+            color: #111;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 750;
+            text-decoration: none;
+            transition: background .25s ease,
+                transform .25s ease;
+        }
+
+        .contact-button:hover {
+            background: var(--orange-light);
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER */
+
+        .footer {
+            border-top: 1px solid var(--border);
+            background: #070707;
+        }
+
+        .footer-inner {
+            max-width: var(--container);
+            width: calc(100% - 48px);
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .footer-brand {
+            color: #777;
+            font-size: 12px;
+        }
+
+        .footer-brand strong {
+            color: var(--white);
+            letter-spacing: 2px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 22px;
+        }
+
+        .footer-links a {
+            color: #888;
+            font-size: 11px;
+            text-decoration: none;
+            transition: color .2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--orange);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                margin-top: 45px;
+            }
+
+            .sidebar {
+                position: relative;
+                top: auto;
+            }
+
+            .sidebar nav {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                column-gap: 20px;
+            }
+
+            .hero {
+                padding: 75px 24px 65px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .header-inner,
+            .footer-inner {
+                width: calc(100% - 32px);
+            }
+
+            .header-inner {
+                min-height: 70px;
+            }
+
+            .logo img {
+                width: 115px;
+            }
+
+            .back-home {
+                font-size: 11px;
+            }
+
+            .hero {
+                padding: 65px 20px 55px;
+            }
+
+            .hero h1 {
+                font-size: 49px;
+                letter-spacing: -2.5px;
+            }
+
+            .hero-description {
+                font-size: 14px;
+            }
+
+            .main-layout {
+                width: calc(100% - 32px);
+                margin: 35px auto 70px;
+            }
+
+            .sidebar {
+                padding: 20px;
+            }
+
+            .sidebar nav {
+                grid-template-columns: 1fr;
+            }
+
+            .policy-section {
+                padding: 24px 20px;
+            }
+
+            .policy-section h2 {
+                font-size: 18px;
+            }
+
+            .intro-card {
+                padding: 24px 20px;
+            }
+
+            .contact-card {
+                padding: 26px 21px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+
+        /* ACCESSIBILITY */
+
+        a:focus-visible {
+            outline: 2px solid var(--orange);
+            outline-offset: 4px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+
+            <a href="index.html" class="logo" aria-label="BRANDY homepage">
+                <img src="images/lOGO.png" alt="BRANDY Marketing Agency">
+            </a>
+
+            <a href="index.html" class="back-home">
+                <span>←</span> Back to Home
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+
+            <div class="eyebrow">Legal & Information</div>
+
+            <h1>
+                Privacy<br>
+                <span>Policy.</span>
+            </h1>
+
+            <p class="hero-description">
+                Your privacy matters to us. Learn how BRANDY handles
+                information when you visit our website, contact us,
+                or enquire about our digital marketing services.
+            </p>
+
+            <div class="hero-meta">
+                <span>Last updated: November 2026</span>
+                <span class="meta-dot"></span>
+                <span>BRANDY Marketing Agency</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-layout">
+
+        <!-- SIDEBAR NAVIGATION -->
+        <aside class="sidebar">
+
+            <div class="sidebar-heading">On this page</div>
+
+            <nav aria-label="Privacy policy navigation">
+                <a href="#introduction">Introduction</a>
+                <a href="#information">Information We Collect</a>
+                <a href="#usage">How We Use Information</a>
+                <a href="#contact">Contact & Enquiries</a>
+                <a href="#sharing">Information Sharing</a>
+                <a href="#security">Data Security</a>
+                <a href="#retention">Data Retention</a>
+                <a href="#rights">Your Privacy Choices</a>
+                <a href="#third-party">Third-Party Services</a>
+                <a href="#changes">Policy Updates</a>
+                <a href="#contact-us">Contact Us</a>
+            </nav>
+
+        </aside>
+
+
+        <!-- POLICY DETAILS -->
+        <div class="content">
+
+            <div class="intro-card">
+                <h2>Your trust is important to us.</h2>
+                <p>
+                    This Privacy Policy explains what information may
+                    be collected, why it is used, and how you can
+                    contact us with privacy-related questions.
+                </p>
+            </div>
+
+
+            <section class="policy-section" id="introduction">
+                <span class="section-number">01 / OVERVIEW</span>
+                <h2>Introduction</h2>
+
+                <p>
+                    BRANDY is a marketing agency providing digital
+                    marketing, social media management, performance
+                    marketing, and website development services.
+                </p>
+
+                <p>
+                    This Privacy Policy describes how information
+                    may be handled when you visit our website,
+                    submit an enquiry, or communicate with us
+                    about our services.
+                </p>
+
+                <p>
+                    Where applicable law requires consent, we will
+                    obtain it through an appropriate process.
+                </p>
+            </section>
+
+
+            <section class="policy-section" id="information">
+                <span class="section-number">02 / DATA COLLECTION</span>
+                <h2>Information We Collect</h2>
+
+                <p>
+                    When you contact BRANDY or request information
+                    about our services, you may voluntarily provide:
+                </p>
+
+                <ul>
+                    <li>Your name and contact details.</li>
+                    <li>Your email address and phone number.</li>
+                    <li>Your business or company name.</li>
+                    <li>Details about your project or service requirements.</li>
+                    <li>Any additional information included in your enquiry.</li>
+                </ul>
+
+                <p>
+                    If analytics or similar technologies are enabled,
+                    technical information such as browser type,
+                    device information, and website usage data
+                    may also be processed.
+                </p>
+            </section>
+
+
+            <section class="policy-section" id="usage">
+                <span class="section-number">03 / PURPOSE</span>
+                <h2>How We Use Your Information</h2>
+
+                <p>Information provided to BRANDY may be used to:</p>
+
+                <ul>
+                    <li>Respond to enquiries and service requests.</li>
+                    <li>Understand your business requirements.</li>
+                    <li>Provide information about our services.</li>
+                    <li>Communicate about ongoing projects.</li>
+                    <li>Improve our website and customer experience.</li>
+                    <li>Meet applicable legal obligations.</li>
+                </ul>
+
+                <p>
+                    We aim to use personal information only for
+                    relevant purposes and in accordance with
+                    applicable privacy requirements.
+                </p>
+            </section>
+
+
+            <section class="policy-section" id="contact">
+                <span class="section-number">04 / COMMUNICATION</span>
+                <h2>Contact Forms & Enquiries</h2>
+
+                <p>
+                    When you contact BRANDY through our website,
+                    WhatsApp, email, or another communication
+                    channel, the information you provide may be
+                    processed to respond to your enquiry.
+                </p>
+
+                <p>
+                    If our website redirects you to WhatsApp or
+                    opens an email draft, your communication
+                    will be handled through the relevant
+                    third-party service.
+                </p>
+
+                <div class="notice">
+                    <span class="notice-icon">!</span>
+                    <p>
+                        Please avoid submitting passwords, payment
+                        card details, confidential documents, or
+                        other sensitive information through general
+                        website enquiries.
+                    </p>
+                </div>
+            </section>
+
+
+            <section class="policy-section" id="sharing">
+                <span class="section-number">05 / DISCLOSURE</span>
+                <h2>Information Sharing</h2>
+
+                <p>
+                    BRANDY does not intend to sell personal
+                    information collected through this website.
+                </p>
+
+                <p>
+                    Information may be shared with relevant service
+                    providers when necessary to operate our website,
+                    communicate with you, deliver requested services,
+                    or comply with legal requirements.
+                </p>
+
+                <p>
+                    We aim to limit such sharing to what is
+                    reasonably necessary for the relevant purpose.
+                </p>
+            </section>
+
+
+            <section class="policy-section" id="security">
+                <span class="section-number">06 / PROTECTION</span>
+                <h2>Data Security</h2>
+
+                <p>
+                    We take reasonable measures to protect
+                    information received through our website
+                    and business communications.
+                </p>
+
+                <p>
+                    However, no method of internet transmission
+                    or electronic storage can be guaranteed
+                    to be completely secure.
+                </p>
+            </section>
+
+
+            <section class="policy-section" id="retention">
+                <span class="section-number">07 / STORAGE</span>
+                <h2>Data Retention</h2>
+
+                <p>
+                    Personal information may be retained for
+                    as long as reasonably necessary to respond
+                    to enquiries, manage business relationships,
+                    provide services, and meet applicable legal
+                    or administrative requirements.
+                </p>
+
+                <p>
+                    Information that is no longer required should
+                    be securely deleted or anonymised where
+                    appropriate and legally permitted.
+                </p>
+            </section>
+
+
+            <section class="policy-section" id="rights">
+                <span class="section-number">08 / YOUR RIGHTS</span>
+                <h2>Your Privacy Choices</h2>
+
+                <p>
+                    Depending on the privacy laws applicable
+                    to you, you may have rights relating to
+                    your personal information.
+                </p>
+
+                <p>These may include the right to:</p>
+
+                <ul>
+                    <li>Request access to your personal information.</li>
+                    <li>Request correction of inaccurate information.</li>
+                    <li>Request deletion where legally applicable.</li>
+                    <li>Ask questions about how your information is processed.</li>
+                </ul>
+
+                <p>
+                    To make a privacy-related request, contact
+                    us using the details provided below.
+                    We may need to verify your identity before
+                    responding.
+                </p>
+            </section>
+
+
+            <section class="policy-section" id="third-party">
+                <span class="section-number">09 / EXTERNAL SERVICES</span>
+                <h2>Third-Party Services & External Links</h2>
+
+                <p>
+                    Our website may contain links to external
+                    platforms or use third-party services,
+                    including hosting, communication, analytics,
+                    or marketing tools.
+                </p>
+
+                <p>
+                    These services may process information
+                    according to their own privacy policies.
+                    BRANDY does not control the privacy practices
+                    of external websites and encourages visitors
+                    to review their policies.
+                </p>
+            </section>
+
+
+            <section class="policy-section" id="changes">
+                <span class="section-number">10 / UPDATES</span>
+                <h2>Changes to This Policy</h2>
+
+                <p>
+                    We may update this Privacy Policy from
+                    time to time to reflect changes in our
+                    website, business practices, services,
+                    or applicable legal requirements.
+                </p>
+
+                <p>
+                    Any updated version will be published
+                    on this page with a revised update date.
+                </p>
+            </section>
+
+
+            <section class="policy-section" id="contact-us">
+                <span class="section-number">11 / GET IN TOUCH</span>
+                <h2>Contact Us</h2>
+
+                <p>
+                    If you have questions about this Privacy
+                    Policy or how your information is handled,
+                    you can contact BRANDY through our website.
+                </p>
+
+                <p>
+                    We will review privacy-related enquiries
+                    and respond as appropriate.
+                </p>
+
+                <a href="index.html#contact">
+                    Visit our contact section →
+                </a>
+            </section>
+
+
+            <!-- CONTACT CTA -->
+            <div class="contact-card">
+
+                <h2>Have a privacy question?</h2>
+
+                <p>
+                    If you need clarification about this policy
+                    or how your information is handled,
+                    get in touch with the BRANDY team.
+                </p>
+
+                <a href="index.html#contact" class="contact-button">
+                    Contact BRANDY <span>↗</span>
+                </a>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <strong>BRANDY</strong>
+                <span> © <span id="year"></span> All rights reserved.</span>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Automatic copyright year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+        // Highlight active sidebar section
+        const sections = document.querySelectorAll(
+            ".policy-section"
+        );
+
+        const navigationLinks = document.querySelectorAll(
+            ".sidebar a"
+        );
+
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            navigationLinks.forEach((link) => {
+                                link.classList.toggle(
+                                    "active",
+                                    link.getAttribute("href") ===
+                                    "#" + entry.target.id
+                                );
+                            });
+                        }
+                    });
+                },
+                {
+                    rootMargin: "-15% 0px -70% 0px"
+                }
+            );
+
+            sections.forEach((section) => {
+                observer.observe(section);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
